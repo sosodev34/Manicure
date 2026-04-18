@@ -1,0 +1,326 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #fafbf6;
+  --foreground: #3d4b43;
+  --card: #fffffc;
+  --card-foreground: #3d4b43;
+  --popover: #fffffc;
+  --popover-foreground: #3d4b43;
+  --primary: #6f8f72;
+  --primary-foreground: #fffffc;
+  --secondary: #eff5ec;
+  --secondary-foreground: #3d4b43;
+  --muted: #edf3ea;
+  --muted-foreground: #6d796f;
+  --accent: #dce8b7;
+  --accent-foreground: #3d4b43;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(61, 75, 67, 0.16);
+  --input: transparent;
+  --input-background: #f6f8f1;
+  --switch-background: #dce8b7;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #6f8f72;
+  --chart-1: #6f8f72;
+  --chart-2: #8fb49b;
+  --chart-3: #eff5ec;
+  --chart-4: #b8c86f;
+  --chart-5: #5d6b62;
+  --radius: 0.375rem;
+  --sidebar: #fafbf6;
+  --sidebar-foreground: #3d4b43;
+  --sidebar-primary: #6f8f72;
+  --sidebar-primary-foreground: #fffffc;
+  --sidebar-accent: #eff5ec;
+  --sidebar-accent-foreground: #3d4b43;
+  --sidebar-border: rgba(61, 75, 67, 0.16);
+  --sidebar-ring: #6f8f72;
+}
+
+.dark {
+  --background: #2f3a34;
+  --foreground: #f8fbf4;
+  --card: #354239;
+  --card-foreground: #f8fbf4;
+  --popover: #354239;
+  --popover-foreground: #f8fbf4;
+  --primary: #b8c86f;
+  --primary-foreground: #2f3a34;
+  --secondary: #46584d;
+  --secondary-foreground: #f8fbf4;
+  --muted: #46584d;
+  --muted-foreground: #cbd6ca;
+  --accent: #dce8b7;
+  --accent-foreground: #2f3a34;
+  --destructive: #df6b78;
+  --destructive-foreground: #f8fbf4;
+  --border: rgba(248, 251, 244, 0.16);
+  --input: #46584d;
+  --ring: #b8c86f;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: #b8c86f;
+  --chart-2: #a9c6ad;
+  --chart-3: #f8fbf4;
+  --chart-4: #dce8b7;
+  --chart-5: #cbd6ca;
+  --sidebar: #2f3a34;
+  --sidebar-foreground: #f8fbf4;
+  --sidebar-primary: #b8c86f;
+  --sidebar-primary-foreground: #2f3a34;
+  --sidebar-accent: #46584d;
+  --sidebar-accent-foreground: #f8fbf4;
+  --sidebar-border: rgba(248, 251, 244, 0.16);
+  --sidebar-ring: #b8c86f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100vh;
+  }
+
+  /**
+  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
+  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
+  */
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: 0;
+    text-wrap: balance;
+  }
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: 0;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+
+  .brand-wordmark {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+  }
+}
+
+@layer utilities {
+  @keyframes studio-rise {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes studio-line {
+    from {
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+    to {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+
+  .studio-reveal {
+    animation: studio-rise 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .studio-reveal-slow {
+    animation: studio-rise 650ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .studio-delay-1 {
+    animation-delay: 100ms;
+  }
+
+  .studio-delay-2 {
+    animation-delay: 220ms;
+  }
+
+  .studio-delay-3 {
+    animation-delay: 340ms;
+  }
+
+  .studio-rule {
+    position: relative;
+  }
+
+  .studio-rule::after {
+    animation: studio-line 900ms cubic-bezier(0.22, 1, 0.36, 1) 320ms both;
+    background: currentColor;
+    bottom: -0.5rem;
+    content: "";
+    height: 1px;
+    left: 0;
+    opacity: 0.25;
+    position: absolute;
+    width: min(100%, 18rem);
+  }
+
+  .studio-hover {
+    transition:
+      background-color 260ms ease,
+      border-color 260ms ease,
+      color 260ms ease,
+      opacity 260ms ease;
+  }
+
+  .studio-hover:hover {
+    background-color: color-mix(in srgb, var(--accent) 18%, var(--card));
+    border-color: color-mix(in srgb, var(--primary) 34%, var(--border));
+  }
+
+  .studio-hover:disabled:hover {
+    background-color: var(--muted);
+    border-color: var(--border);
+  }
+
+  .studio-cta {
+    overflow: hidden;
+    position: relative;
+    transition:
+      background-color 260ms ease,
+      color 260ms ease,
+      border-color 260ms ease;
+  }
+
+  .studio-cta::after {
+    background: color-mix(in srgb, var(--accent) 26%, transparent);
+    border-radius: inherit;
+    bottom: 0.35rem;
+    content: "";
+    height: 0.28rem;
+    left: 0.75rem;
+    position: absolute;
+    right: 0.75rem;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 260ms ease;
+  }
+
+  .studio-cta:hover::after {
+    transform: scaleX(1);
+  }
+
+  .studio-cta:disabled::after {
+    transform: scaleX(0);
+  }
+
+  .studio-cta > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .studio-reveal,
+    .studio-reveal-slow,
+    .studio-rule::after {
+      animation: none;
+    }
+
+    .studio-hover,
+    .studio-cta {
+      transition: none;
+    }
+  }
+}
