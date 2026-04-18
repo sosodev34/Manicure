@@ -10,8 +10,8 @@ export function SiteNav() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/95 backdrop-blur">
       <nav className="mx-auto flex h-14 max-w-7xl items-center justify-between px-5 sm:px-8">
-        <Link href="/" className="brand-wordmark text-xl lowercase">
-          nōmade
+        <Link href="/" className="brand-wordmark text-lg lowercase">
+          noo.ma.de
         </Link>
         <div className="hidden items-center gap-6 text-sm text-muted-foreground md:flex">
           {navItems.map((item) => (

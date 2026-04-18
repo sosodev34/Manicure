@@ -33,7 +33,7 @@ export function AdminClient() {
   return (
     <section className="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:py-20">
       <div className="studio-reveal max-w-3xl">
-        <p className="text-xs lowercase tracking-[0.24em] text-muted-foreground">administration</p>
+        <p className="text-xs lowercase text-muted-foreground">administration</p>
         <h1 className="mt-5 text-5xl font-light lowercase leading-tight">un planning net, calme et maîtrisé.</h1>
         <p className="mt-5 text-sm leading-7 text-muted-foreground">
           Gérez les soins, les prix, les créneaux, les réservations et les statuts depuis une vue simple.
@@ -69,7 +69,7 @@ export function AdminClient() {
                     <p className="mt-1 text-sm text-muted-foreground">
                       {appointment.serviceName}, {format(parseISO(appointment.date), "d MMM", { locale: fr })} à {appointment.time}
                     </p>
-                    <p className="mt-2 text-xs uppercase tracking-[0.14em] text-muted-foreground">
+                    <p className="mt-2 text-xs uppercase text-muted-foreground">
                       Paiement {paymentStatusLabel(appointment.paymentStatus)}
                     </p>
                   </div>

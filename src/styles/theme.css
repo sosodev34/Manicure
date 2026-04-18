@@ -142,7 +142,7 @@
     font-family: var(--font-display);
     font-size: var(--text-2xl);
     font-weight: 400;
-    line-height: 0.98;
+    line-height: 1.08;
     letter-spacing: 0;
     text-wrap: balance;
   }
@@ -151,7 +151,7 @@
     font-family: var(--font-display);
     font-size: var(--text-xl);
     font-weight: 400;
-    line-height: 1.05;
+    line-height: 1.12;
     letter-spacing: 0;
     text-wrap: balance;
   }
@@ -166,7 +166,7 @@
     font-size: var(--text-base);
     font-weight: 500;
     line-height: 1.4;
-    letter-spacing: 0.05em;
+    letter-spacing: 0;
   }
 
   label {
@@ -192,9 +192,10 @@
   }
 
   .brand-wordmark {
-    font-family: var(--font-display);
+    font-family: var(--font-sans);
     font-weight: 500;
-    letter-spacing: 0.08em;
+    letter-spacing: 0;
+    line-height: 1;
   }
 }
 

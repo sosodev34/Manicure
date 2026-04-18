@@ -26,7 +26,7 @@ export function ConfirmationClient() {
         <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-lg bg-accent text-accent-foreground">
           <CheckCircle2 className="h-7 w-7" />
         </div>
-        <p className="mt-8 text-xs lowercase tracking-[0.24em] text-muted-foreground">réservation confirmée</p>
+        <p className="mt-8 text-xs lowercase text-muted-foreground">réservation confirmée</p>
         <h1 className="mt-5 text-5xl font-light lowercase leading-tight">rendez-vous confirmé.</h1>
         <p className="mx-auto mt-5 max-w-md text-sm leading-7 text-muted-foreground">
           Votre créneau est réservé et le paiement est validé.

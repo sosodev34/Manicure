@@ -87,7 +87,7 @@ export function BookingExperience() {
     <section className="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:py-20">
       <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
         <aside className="lg:sticky lg:top-24 lg:self-start">
-          <p className="text-xs lowercase tracking-[0.24em] text-muted-foreground">réservation / nōmade manucure</p>
+          <p className="text-xs lowercase text-muted-foreground">réservation / nōmade manucure</p>
           <h1 className="mt-5 max-w-lg text-5xl font-light lowercase leading-tight sm:text-6xl">
             réservez votre manucure naturelle.
           </h1>
@@ -146,7 +146,7 @@ export function BookingExperience() {
                         </div>
                         <span className="text-sm">{currency(service.priceCents)}</span>
                       </div>
-                      <p className="mt-4 text-xs uppercase tracking-[0.16em] text-muted-foreground">
+                      <p className="mt-4 text-xs uppercase text-muted-foreground">
                         {service.durationMinutes} minutes
                       </p>
                     </button>

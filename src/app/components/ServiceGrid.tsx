@@ -27,7 +27,7 @@ export function ServiceGrid({ compact = false }: { compact?: boolean }) {
               </div>
               <p className="whitespace-nowrap rounded-lg bg-accent px-3 py-1 text-sm text-accent-foreground">{currency(service.priceCents)}</p>
             </div>
-            <div className="mt-6 flex items-center justify-between border-t border-border pt-4 text-xs lowercase tracking-[0.16em] text-muted-foreground">
+            <div className="mt-6 flex items-center justify-between border-t border-border pt-4 text-xs lowercase text-muted-foreground">
               <span>{service.durationMinutes} min</span>
               <span>choisir</span>
             </div>

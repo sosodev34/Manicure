@@ -33,7 +33,7 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
   return (
     <div className="mx-auto grid min-h-[calc(100vh-4rem)] max-w-6xl items-center gap-12 px-5 py-14 sm:px-8 lg:grid-cols-2">
       <div className="studio-reveal">
-        <p className="text-xs lowercase tracking-[0.24em] text-muted-foreground">
+        <p className="text-xs lowercase text-muted-foreground">
           {mode === "signup" ? "Créer un compte" : "Bon retour"}
         </p>
         <h1 className="mt-5 max-w-lg text-5xl font-light lowercase leading-tight">

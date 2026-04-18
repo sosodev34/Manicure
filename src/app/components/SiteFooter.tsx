@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="border-t border-border px-5 py-10 sm:px-8">
       <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <p className="brand-wordmark text-xl lowercase">nōmade manucure</p>
+          <p className="brand-wordmark text-lg lowercase">noo.ma.de</p>
           <p className="mt-4 max-w-sm text-sm leading-6 text-muted-foreground">
             Spécialiste de l’ongle naturel. Manucures minimalistes, propres et élégantes.
           </p>

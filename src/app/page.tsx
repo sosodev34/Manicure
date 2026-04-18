@@ -16,8 +16,8 @@ export default function HomePage() {
       <section className="border-b border-border">
         <div className="mx-auto grid min-h-[calc(100vh-3.5rem)] max-w-7xl items-center gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[1fr_0.78fr] lg:py-20">
           <div className="max-w-3xl">
-            <p className="studio-reveal text-xs lowercase tracking-[0.28em] text-muted-foreground">nōmade manucure / ongle naturel</p>
-            <h1 className="studio-reveal studio-delay-1 studio-rule mt-7 text-6xl font-light lowercase leading-none sm:text-7xl lg:text-8xl">
+            <p className="studio-reveal text-xs lowercase text-muted-foreground">nōmade manucure / ongle naturel</p>
+            <h1 className="studio-reveal studio-delay-1 studio-rule mt-7 text-6xl font-light lowercase leading-[1.06] sm:text-7xl lg:text-8xl">
               l’élégance de l’ongle naturel.
             </h1>
             <p className="studio-reveal studio-delay-2 mt-10 max-w-lg text-base leading-8 text-muted-foreground">
@@ -42,7 +42,7 @@ export default function HomePage() {
                 className="h-[560px] w-full object-cover saturate-[0.82] transition duration-500 hover:saturate-100"
               />
             </div>
-            <div className="mt-3 flex justify-between text-xs lowercase tracking-[0.16em] text-muted-foreground">
+            <div className="mt-3 flex justify-between text-xs lowercase text-muted-foreground">
               <a
                 href={instagram.url}
                 target="_blank"
@@ -70,7 +70,7 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-5 pb-16 sm:px-8">
         <div className="mb-8 max-w-2xl">
-          <p className="text-xs lowercase tracking-[0.24em] text-muted-foreground">soins</p>
+          <p className="text-xs lowercase text-muted-foreground">soins</p>
           <h2 className="mt-4 text-4xl font-light lowercase leading-tight sm:text-5xl">choisissez votre soin.</h2>
           <p className="mt-4 text-sm leading-7 text-muted-foreground">
             Des prestations pensées pour l’ongle naturel, avec des prix lisibles et une réservation rapide.
@@ -82,7 +82,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-5 pb-16 sm:px-8">
         <div className="rounded-lg border border-border bg-card p-6 sm:flex sm:items-center sm:justify-between sm:gap-8">
           <div>
-            <p className="text-xs lowercase tracking-[0.24em] text-muted-foreground">instagram</p>
+            <p className="text-xs lowercase text-muted-foreground">instagram</p>
             <h2 className="mt-3 text-3xl font-light lowercase">suivez les créations du studio.</h2>
             <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground">
               Ongles naturels, inspirations minimalistes et petites nouvelles de NŌMADE à retrouver sur Instagram.
@@ -102,7 +102,7 @@ export default function HomePage() {
       <section className="border-y border-border bg-secondary/45 px-5 py-12 sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 md:flex-row md:items-end">
           <div>
-            <p className="text-xs lowercase tracking-[0.24em] text-muted-foreground">studio</p>
+            <p className="text-xs lowercase text-muted-foreground">studio</p>
             <h2 className="mt-4 text-4xl font-light lowercase">des ongles naturels, tout en délicatesse.</h2>
           </div>
           <div className="grid gap-6 text-sm leading-7 text-muted-foreground sm:grid-cols-2">

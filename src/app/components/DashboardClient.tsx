@@ -37,7 +37,7 @@ export function DashboardClient() {
     <section className="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:py-20">
       <div className="studio-reveal flex flex-col justify-between gap-8 border-b border-border pb-10 md:flex-row md:items-end">
         <div>
-          <p className="text-xs lowercase tracking-[0.24em] text-muted-foreground">espace client</p>
+          <p className="text-xs lowercase text-muted-foreground">espace client</p>
           <h1 className="mt-5 text-5xl font-light lowercase leading-tight">vos rendez-vous, sans bruit.</h1>
         </div>
         <Link href="/booking" className="studio-cta rounded-lg bg-primary px-6 py-3 text-center text-sm text-primary-foreground">
